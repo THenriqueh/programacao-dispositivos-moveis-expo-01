@@ -1,17 +1,18 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from 'react-native';
+import MiniBio from '../../components/MiniBio';
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Funcionando!</Text>
+      <Text style={styles.title}>
+        App criado para a disciplina Programação para Dispositivos Móveis
+      </Text>
+      <MiniBio />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 16 },
+  title: { fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 24 },
 });
